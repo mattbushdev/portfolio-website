@@ -6,16 +6,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matt Bush - Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 class="title">Matt's Portfolio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-    </nav>
+    <header id="header">
+      <div id="icons" class="icons">
+        <a href="https://github.com/mattbushdev">
+          <img
+            src="images/github-mark-light-32px.png"
+            alt="link to my github"
+            style="margin-right: 25px"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/matthew-bush-001/">
+          <img
+            src="images/LI-In-Bug.png"
+            alt="link to my LinkedIn profile"
+            style="height: 30px; max-width: 35px; margin-right: 25px"
+          />
+        </a>
+        <a href="mailto:mattbushdev@gmail.com">
+          <img
+            src="images/gmail.svg"
+            alt="link to send email"
+            style="height: 30px; max-width: 35px"
+          />
+        </a>
+      </div>
+    </header>
+    <section id="introduction">
+      <div class="title__block">
+        <h1 class="title">Hey, I am<br />Matt Bush</h1>
+        <h2>
+          I am a recent graduate of the Northcoders Bootcamp looking for a
+          full-time position in the tech industry. I have learnt the
+          fundamentals of Javascript, Node and React as well as HTML and CSS.
+          The projects I have completed show these skills across backend and
+          frontend development. If you like my work please get in touch.
+        </h2>
+        <a href="mailto:mattbushdev@gmail.com">
+          <button class="title__button-contact">Get in touch</button>
+        </a>
+      </div>
+      <div class="title__profile-block">
+        <img
+          src="images/me.svg"
+          class="title__profile-image"
+          height="450px"
+          alt="my profile picture"
+        />
+      </div>
+    </section>
+    <div id="divider" class="divider__block">
+      <hr color="2e303f" width="40%" size="0.1" />
+      <h3 class="divider__title">Projects</h3>
+      <hr color="2e303f" width="40%" size="0.1" />
+    </div>
+    <section id="projects">
+        <div class="project__card">
+          <div id="card-body" class="project__card-body">
+            <h3>Carbon Track - Team Project</h3>
+            <p>
+              Carbon Track is a mobile app built using React Native and AWS
+              Dyanmo DB. This was a team built project for the final part of the
+              Northcoders Bootcamp. </p>
+              <p>
+                The app calculates the amount of CO2 emitted
+              for a journey based on the user's vehicle. Users are shown
+              alternative routes using different travel options which emission
+              savings calculated. Journeys can be tracked and compared with
+              friends or family. Work colleagues can create a commuting group or
+              for all those secret green introverts out there the option to ride
+              solo.
+              </p>
+            </p>
+            <p>
+              The app was built to improve awareness for the amount of C02
+              emissions produced on everyday journeys by car. Climate change is
+              currently one of the biggest issues facing the planet right now.
+              Hopefully this app can go a small way to increasing awareness
+              around this important topic and getting people involved in the
+              push for better climate action.
+            </p>
+            <a
+              target="_blank"
+              href="https://github.com/singhjptech/carbon-track"
+              ><button class="project__button-link">View Code</button>
+            </a>
+          </div>
+        </div>
+        <div class="project__card">
+          <img
+            src="./images/carbontrack.png"
+            alt="carbon track logo"
+            class="project__card-image"
+            height="60"
+            width="450"
+          />
+          <div class="project__image-block">
+            <img
+              src="./images/carbontrack-vehicle.PNG"
+              alt="carbon track mobile app vehicle screen example"
+              class="project__card-image"
+              height="300"
+              width="150"
+            />
+            <img
+              src="./images/carbontrack-home.PNG"
+              alt="carbon track mobile app home screen example"
+              class="project__card-image"
+              height="300"
+              width="150"
+            />
+            <img
+              src="./images/carbontrack-journey.PNG"
+              alt="carbon track mobile app journey screen example"
+              class="project__card-image"
+              height="300"
+              width="150"
+            />
+          </div>
+        </div>
 
-    <!-- <img src="./images/" alt="my profile picture" /> -->
-    <p>Welcome to my portfolio</p>
+        <div class="project__card">
+          <img
+            src="./images/nc-news-frontend.png"
+            alt="code from backend project"
+            class="project__card-image"
+            height="550"
+            width="550"
+          />
+        </div>
+        <div class="project__card">
+          <div id="card-body" class="project__card-body">
+            <h3>NC News Service API - Frontend</h3>
+            <p>
+              Northcoders (NC) News is a project built for the purpose of
+              providing a frontend architecture to the NC News Service API that
+              I built in a previous project. The intention of this React
+              application is to mimic the building of a real world frontend news
+              site.
+            </p>
+            <p>
+              The technologies and packages used for this project included
+              React, HTML, CSS and axios.
+            </p>
+            <p>The project is built and hosted through Netlify</p>
+            <a target="_blank" href="https://github.com/mattbushdev/fe-nc-news"
+              ><button class="project__button-link">View Code</button>
+            </a>
+          </div>
+        </div>
+        <div class="project__card">
+          <div id="card-body" class="project__card-body">
+            <h3>NC News Service API - Backend</h3>
+            <p>
+              Northcoders (NC) News Service API is a project built for the
+              purpose of accessing application data programmatically. The
+              intention is to mimic the building of a real world backend news
+              service (such as reddit) which should provide this data to the
+              front end architecture.
+            </p>
+            <p>
+              The technologies and packages used for this project included
+              postgreSQL, express, pg, pg-format, jest and supertest.
+            </p>
+            <p>The project is hosted through Heroku and incorporates CI/CD</p>
+            <a
+              target="_blank"
+              href="https://github.com/mattbushdev/nc-news-api"
+            >
+              <button class="project__button-link">View Code</button>
+            </a>
+          </div>
+        </div>
+        <div class="project__card">
+          <img
+            src="./images/nc-news-backend.png"
+            alt="code from backend project"
+            class="project__card-image"
+            height="550"
+            width="550"
+          />
+        </div>
+    </section>
+    <div id="divider" class="divider__block">
+      <hr color="2e303f" width="40%" size="0.1" />
+      <h3 class="divider__title">Matt Bush</h3>
+      <hr color="2e303f" width="40%" size="0.1" />
+    </div>
   </body>
 </html>
