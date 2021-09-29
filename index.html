@@ -16,14 +16,14 @@
   <body>
     <header id="header">
       <div id="icons" class="icons">
-        <a href="https://github.com/mattbushdev">
+        <a target="_blank" href="https://github.com/mattbushdev">
           <img
             src="images/github-mark-light-32px.png"
             alt="link to my github"
             style="margin-right: 25px"
           />
         </a>
-        <a href="https://www.linkedin.com/in/matthew-bush-001/">
+        <a target="_blank" href="https://www.linkedin.com/in/matthew-bush-001/">
           <img
             src="images/LI-In-Bug.png"
             alt="link to my LinkedIn profile"
@@ -41,7 +41,7 @@
     </header>
     <section id="introduction">
       <div class="title__block">
-        <h1 class="title">Hey, I am<br />Matt Bush</h1>
+        <h1>Hey, I am<br />Matt Bush</h1>
         <h2>
           I am a recent graduate of the Northcoders Bootcamp looking for a
           full-time position in the tech industry. I have learnt the
@@ -57,42 +57,38 @@
         <img
           src="images/me.svg"
           class="title__profile-image"
-          height="450px"
           alt="my profile picture"
         />
       </div>
+      <div id="divider" class="divider__block">
+        <hr color="2e303f" width="30%" size="0.1" />
+        <h3 class="divider__title">Scroll to Projects</h3>
+        <hr color="2e303f" width="30%" size="0.1" />
+      </div>
     </section>
-    <div id="divider" class="divider__block">
-      <hr color="2e303f" width="40%" size="0.1" />
-      <h3 class="divider__title">Projects</h3>
-      <hr color="2e303f" width="40%" size="0.1" />
-    </div>
-    <section id="projects">
+
+    <section id="project-1">
       <div class="project__card">
         <div id="card-body" class="project__card-body">
           <h3>Carbontrack - Team Project</h3>
           <p>
             Carbontrack is a mobile app built using React Native and AWS Dynamo
-            DB. This was a team built project for the final sprint of the
-            Northcoders Bootcamp.
+            DB. This was a team built project on the Northcoders Bootcamp.
           </p>
           <p>
-            The app calculates the amount of CO2 emitted for a journey based on
-            the user's vehicle. Users are shown alternative routes using
-            different travel options which emission savings calculated. Journeys
+            The app calculates CO2 emitted for a journey based on a user's
+            vehicle. Users are shown alternative routes using different travel
+            options and the app will calculate any emission savings. Journeys
             can be tracked and compared with friends or family. Work colleagues
             can create a commuting group or for all those secret green
-            introverts out there the option to ride solo.
+            introverts out there, the option to ride solo.
           </p>
           <p>
             The app was built to improve awareness for the amount of CO2
-            emissions produced on everyday journeys by car. Climate change is
-            currently one of the biggest issues facing the planet right now.
-            Hopefully this app can go a small way to increasing awareness around
-            this important topic and getting people involved in the push for
+            emissions produced on everyday journeys by car and to push for
             better climate action.
           </p>
-          <a target="_blank" href="https://github.com/singhjptech/carbon-track"
+          <a target="_blank" href="https://github.com/mattbushdev/carbon-track"
             ><button class="project__button-link">View Code</button>
           </a>
         </div>
@@ -113,7 +109,8 @@
           width="550"
         />
       </div>
-
+    </section>
+    <section id="project-2">
       <div class="project__card">
         <img
           src="./images/nc-news-3.png"
@@ -142,6 +139,8 @@
           </a>
         </div>
       </div>
+    </section>
+    <section id="project-3">
       <div class="project__card">
         <div id="card-body" class="project__card-body">
           <h3>NC News Service API - Backend</h3>
