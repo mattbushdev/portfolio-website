@@ -69,8 +69,16 @@ section {
 }
 h1 {
   font-size: 5rem;
-  color: whitesmoke;
-  font-family: "Courier New", Courier, monospace;
+  background-image: linear-gradient(
+    120deg,
+    #2fb7ff 10%,
+    #6f5cb9,
+    #e74b90 70%,
+    #ed7a7a
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -85,6 +93,30 @@ h3 {
   color: whitesmoke;
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  box-shadow: 0 0 0 0 #2fb7ff;
+  opacity: 100%;
+  transform: scale(1);
+  animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #2fb7ff;
+    opacity: 80%;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px #2fb7ff;
+    opacity: 10%;
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #2fb7ff;
+    opacity: 0%;
+  }
 }
 
 .title__profile-block {
@@ -92,11 +124,19 @@ h3 {
   flex: 1;
   justify-content: center;
   width: 50%;
+  perspective: 1000px;
 }
 
 .title__profile-image {
   width: 80%;
   height: auto;
+  transform: rotateY(-10deg);
+  transition: all 1s ease-out;
+}
+
+.title__profile-image:hover {
+  transform: rotateY(0deg);
+  transition: all 1s ease-out;
 }
 
 .title__button-contact:hover {
