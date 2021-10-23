@@ -31,7 +31,6 @@ a {
 
 section {
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   width: 100%;
 }
@@ -321,16 +320,13 @@ p {
   border-bottom: 2px solid white;
 }
 
-@media only screen and (max-width: 1405px) {
-  .project__card {
-    width: 47%;
-  }
-}
-
 @media only screen and (max-width: 1070px) {
   body {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .icons {
+    justify-content: center;
   }
   section {
     flex-direction: column;
@@ -363,6 +359,9 @@ p {
   body {
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .icons {
+    justify-content: center;
   }
   h1 {
     font-size: 2rem;
@@ -401,9 +400,9 @@ p {
     width: 100%;
   }
   .title__block {
-    justify-content: flex-start;
     width: 100%;
   }
+
   .title__button-contact {
     font-size: 1rem;
     padding: 0.5rem;
@@ -412,7 +411,7 @@ p {
   }
 
   .divider__title {
-    max-width: 40%;
+    max-width: 100%;
     font-size: 1rem;
   }
   .project__card {
