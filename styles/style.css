@@ -106,12 +106,6 @@ h3 {
   transition: all 1s ease-out;
 }
 
-.title__button-contact:hover {
-  background: #2fb7ff;
-  color: #171622;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-}
-
 .title__button-contact {
   background: #171622;
   color: #2fb7ff;
@@ -120,6 +114,17 @@ h3 {
   font-size: 1.25rem;
   padding: 0.25rem;
   margin-top: 1rem;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.title__button-contact:hover {
+  background: #2fb7ff;
+  color: #171622;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all 0.2s ease-out;
 }
 
 .divider__block,
@@ -237,27 +242,6 @@ p {
   padding: 1rem;
 }
 
-.project__button-info {
-  color: #2e303f;
-  font-size: 1rem;
-  padding: 0.5rem;
-  margin-top: 1.25rem;
-  border-radius: 0.8rem;
-}
-
-.project__button-info:hover {
-  background: #2e303f;
-  color: whitesmoke;
-  font-weight: bold;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
-}
-
-.project__button-link:hover {
-  background: #2fb7ff;
-  color: #171622;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-}
-
 .project__button-link {
   background: #2e303f;
   color: #2fb7ff;
@@ -267,6 +251,17 @@ p {
   margin-top: 1.25rem;
   border-radius: 0.8rem;
   text-decoration: none;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.project__button-link:hover {
+  background: #2fb7ff;
+  color: #171622;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all 0.2s ease-out;
 }
 
 .footer__text {
