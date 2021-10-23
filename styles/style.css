@@ -31,7 +31,7 @@ a {
 
 section {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   width: 100%;
 }
@@ -138,11 +138,11 @@ h3 {
   color: #2fb7ff;
   max-width: 30%;
   font-size: 1.25rem;
+  text-align: center;
 }
 
 .arrows-scroll {
   display: block;
-  margin: 0 auto;
   height: 100%;
 }
 
@@ -217,7 +217,7 @@ h3 {
   align-items: center;
   justify-content: space-around;
   height: 75%;
-  width: 48%;
+  width: 50%;
   background: #2e303f;
   border-radius: 0.8rem;
   margin: 0.8rem;
@@ -322,35 +322,33 @@ p {
 }
 
 @media only screen and (max-width: 1405px) {
-  body {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  h2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
   .project__card {
     width: 47%;
   }
 }
 
-@media only screen and (max-width: 925px) {
+@media only screen and (max-width: 1070px) {
   body {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  h2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   section {
     flex-direction: column;
+  }
+  #introduction,
+  #project-1,
+  #project-2,
+  #project-3 {
     height: auto;
   }
+
+  #project-2 {
+    flex-direction: column-reverse;
+  }
+
   .title__profile-block {
     width: 100%;
-    margin: 2rem;
+    margin: 5%;
   }
   .title__block {
     width: 100%;
@@ -363,17 +361,15 @@ p {
 
 @media only screen and (max-width: 425px) {
   body {
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   h1 {
     font-size: 2rem;
   }
 
   h2 {
-    font-size: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    font-size: 0.9rem;
   }
 
   h3 {
@@ -381,16 +377,28 @@ p {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
+  p {
+    font-size: 0.9rem;
+  }
   section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
-    width: 90%;
+    width: 100%;
   }
+  #introduction,
+  #project-1,
+  #project-2,
+  #project-3 {
+    height: auto;
+  }
+
+  #project-2 {
+    flex-direction: column-reverse;
+  }
+
   .title__profile-block {
     width: 100%;
-    margin: 1rem;
   }
   .title__block {
     justify-content: flex-start;
@@ -402,20 +410,21 @@ p {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .divider__line {
-    width: 25%;
-  }
+
   .divider__title {
-    color: #2fb7ff;
     max-width: 40%;
-    font-size: 0.6rem;
-    text-align: center;
-    margin-bottom: 0rem;
+    font-size: 1rem;
   }
   .project__card {
     width: 100%;
   }
   .project__card-body {
     padding: 1rem;
+  }
+  #toTop {
+    bottom: 1%;
+    right: 1%;
+    padding: 10px;
+    border-radius: 5px;
   }
 }
