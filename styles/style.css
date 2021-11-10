@@ -112,7 +112,7 @@ h3 {
   border-color: #2fb7ff;
   border-radius: 0.5rem;
   font-size: 1.25rem;
-  padding: 0.25rem;
+  padding: 0.5rem;
   margin-top: 1rem;
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
@@ -285,7 +285,7 @@ p {
 }
 
 .project__button-link--col:hover {
-  color: #2e303f;
+  color: white;
   box-shadow: none;
   -webkit-transform: translateY(0);
   transform: translateY(0);
@@ -428,7 +428,6 @@ p {
 
   .title__button-contact {
     font-size: 1rem;
-    padding: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
