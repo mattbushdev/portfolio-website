@@ -251,17 +251,45 @@ p {
   margin-top: 1.25rem;
   border-radius: 0.8rem;
   text-decoration: none;
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .project__button-link:hover {
   background: #2fb7ff;
-  color: #171622;
+  color: #2e303f;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all 0.2s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.project__button-link--col {
+  color: #2fb7ff;
+  border-color: transparent;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1.25rem;
+  border-radius: 0.8rem;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(120deg, #2fb7ff 10%, #6f5cb9, #e74b90 70%, #ed7a7a);
+  -webkit-background-clip: content-box, border-box;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #2e303f inset;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.project__button-link--col:hover {
+  color: #2e303f;
+  box-shadow: none;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all 0.4s ease-out;
 }
 
 .footer__text {
