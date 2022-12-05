@@ -1,235 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matt Bush</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="./images/MB-FAVICON.png" />
-  </head>
-  <body>
-    <button onclick="topFunction()" id="toTop">
-      <span class="toTop__arrow"></span>
-    </button>
-    <header id="header">
-      <div id="icons" class="icons">
-        <a target="_blank" href="https://github.com/mattbushdev">
-          <img
-            src="images/github-mark-light-32px.png"
-            alt="link to my github"
-            style="margin-right: 25px"
-          />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matt Bush</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./images/MB-FAVICON.png" />
+</head>
+
+<body>
+  <button onclick="topFunction()" id="toTop">
+    <span class="toTop__arrow"></span>
+  </button>
+  <header id="header">
+    <div id="icons" class="icons">
+      <a target="_blank" href="https://github.com/mattbushdev">
+        <img src="images/github-mark-light-32px.png" alt="link to my github" style="margin-right: 25px" />
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/matthew-bush-001/">
+        <img src="images/LI-In-Bug.png" alt="link to my LinkedIn profile"
+          style="height: 30px; max-width: 35px; margin-right: 25px" />
+      </a>
+      <a href="mailto:mattbushdev@gmail.com">
+        <img src="images/gmail.svg" alt="link to send email" style="height: 30px; max-width: 35px" />
+      </a>
+    </div>
+  </header>
+  <section id="introduction">
+    <div class="title__block">
+      <h1>Hey, I am<br />Matt Bush</h1>
+      <h2>
+        A software engineer who builds production ready web APIs in a distributed event-based architecture and creates
+        engaging user interfaces.
+        <br /><br />
+        Currently I use C# for backend services and Typescript with React and Angular frameworks for frontend
+        applications.
+        Take a look through my projects below and if you
+        like my work get in touch.
+      </h2>
+      <a href="mailto:mattbushdev@gmail.com">
+        <button class="title__button-contact">Get in touch</button>
+      </a>
+    </div>
+    <div class="title__profile-block">
+      <img src="images/me.svg" class="title__profile-image" alt="my profile picture" />
+    </div>
+  </section>
+  <div id="divider" class="divider__block">
+    <h3 class="divider__title">Scroll to Projects</h3>
+    <div class="arrows-scroll">
+      <span class="divider__arrows arrow-one"></span>
+      <span class="divider__arrows arrow-two"></span>
+      <span class="divider__arrows arrow-three"></span>
+    </div>
+  </div>
+
+  <section id="project-1">
+    <div class="project__card">
+      <div id="card-body" class="project__card-body">
+        <h3>Carbontrack - Team Project</h3>
+        <p>
+          Carbontrack is a mobile app built using React Native and AWS Dynamo
+          DB. This was a team built project on the Northcoders Bootcamp.
+        </p>
+        <p>
+          The app calculates CO2 emitted for a journey based on a user's
+          vehicle. Users are shown alternative routes using different travel
+          options and the app will calculate any emission savings. Journeys
+          can be tracked and compared with friends or family. Work colleagues
+          can create a commuting group or for all those secret green
+          introverts out there, the option to ride solo.
+        </p>
+        <p>
+          The app was built to improve awareness for the amount of CO2
+          emissions produced on everyday journeys by car and to push for
+          better climate action.
+        </p>
+        <a target="_blank" href="https://github.com/mattbushdev/carbon-track"><button class="project__button-link">View
+            Code</button>
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/matthew-bush-001/">
-          <img
-            src="images/LI-In-Bug.png"
-            alt="link to my LinkedIn profile"
-            style="height: 30px; max-width: 35px; margin-right: 25px"
-          />
+        <a target="_blank" href="https://youtu.be/qt_hCJjQVrk?t=130"><button class="project__button-link--col">See
+            Demo</button>
         </a>
-        <a href="mailto:mattbushdev@gmail.com">
-          <img
-            src="images/gmail.svg"
-            alt="link to send email"
-            style="height: 30px; max-width: 35px"
-          />
-        </a>
-      </div>
-    </header>
-    <section id="introduction">
-      <div class="title__block">
-        <h1>Hey, I am<br />Matt Bush</h1>
-        <h2>
-          Recent graduate of Northcoders Bootcamp with skills in the
-          fundamentals of Javascript, Node, postgreSQL, React and ReactNative as
-          well as HTML and CSS. Take a look through my projects below and if you
-          like my work get in touch.
-        </h2>
-        <a href="mailto:mattbushdev@gmail.com">
-          <button class="title__button-contact">Get in touch</button>
-        </a>
-      </div>
-      <div class="title__profile-block">
-        <img
-          src="images/me.svg"
-          class="title__profile-image"
-          alt="my profile picture"
-        />
-      </div>
-    </section>
-    <div id="divider" class="divider__block">
-      <h3 class="divider__title">Scroll to Projects</h3>
-      <div class="arrows-scroll">
-        <span class="divider__arrows arrow-one"></span>
-        <span class="divider__arrows arrow-two"></span>
-        <span class="divider__arrows arrow-three"></span>
       </div>
     </div>
+    <div class="project__card">
+      <img src="./images/carbontrack.png" alt="carbon track logo" class="project__card-image" height="60" width="450" />
+      <img src="./images/carbontrack-3.png" alt="carbon track mobile app screen examples" class="project__card-image"
+        height="375" width="550" />
+    </div>
+  </section>
+  <section id="project-2">
+    <div class="project__card">
+      <img src="./images/nc-news-3.png" alt="code from backend project" class="project__card-image" height="375"
+        width="550" />
+    </div>
+    <div class="project__card">
+      <div id="card-body" class="project__card-body">
+        <h3>NC News Service API - Frontend</h3>
+        <p>
+          Northcoders (NC) News is a project built for the purpose of
+          providing a frontend architecture to the NC News Service API that I
+          built in a previous project. The intention of this React application
+          is to mimic the building of a real world frontend news site.
+        </p>
+        <p>
+          The technologies and packages used for this project included React,
+          HTML, CSS and axios.
+        </p>
+        <p>The project is built and hosted through Netlify</p>
+        <p>**Unfortunately due to Heroku's change in free tier my web app isn't currently viewable**</p>
+        <a target="_blank" href="https://github.com/mattbushdev/fe-nc-news"><button class="project__button-link">View
+            Code</button>
+        </a>
+        <a target="_blank" href="https://nc-news-service.netlify.app/"><button class="project__button-link--col"
+            disabled="true">Live
+            App</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="project-3">
+    <div class="project__card">
+      <div id="card-body" class="project__card-body">
+        <h3>NC News Service API - Backend</h3>
+        <p>
+          Northcoders (NC) News Service API is a project built for the purpose
+          of accessing application data programmatically. The intention is to
+          mimic the building of a real world backend news service (such as
+          reddit) which should provide this data to the front end
+          architecture.
+        </p>
+        <p>
+          The technologies and packages used for this project included
+          postgreSQL, express, pg, pg-format, jest and supertest.
+        </p>
+        <p>The project is hosted through Heroku and incorporates CI/CD</p>
+        <a target="_blank" href="https://github.com/mattbushdev/nc-news-api">
+          <button class="project__button-link">View Code</button>
+        </a>
+      </div>
+    </div>
+    <div class="project__card">
+      <img src="./images/nc-backend.png" alt="code from backend project" class="project__card-image" height="400"
+        width="600" />
+    </div>
+  </section>
+  <script>
+    toTopButton = document.getElementById("toTop");
+    window.onscroll = function () {
+      scrollFunction();
+    };
 
-    <section id="project-1">
-      <div class="project__card">
-        <div id="card-body" class="project__card-body">
-          <h3>Carbontrack - Team Project</h3>
-          <p>
-            Carbontrack is a mobile app built using React Native and AWS Dynamo
-            DB. This was a team built project on the Northcoders Bootcamp.
-          </p>
-          <p>
-            The app calculates CO2 emitted for a journey based on a user's
-            vehicle. Users are shown alternative routes using different travel
-            options and the app will calculate any emission savings. Journeys
-            can be tracked and compared with friends or family. Work colleagues
-            can create a commuting group or for all those secret green
-            introverts out there, the option to ride solo.
-          </p>
-          <p>
-            The app was built to improve awareness for the amount of CO2
-            emissions produced on everyday journeys by car and to push for
-            better climate action.
-          </p>
-          <a target="_blank" href="https://github.com/mattbushdev/carbon-track"
-            ><button class="project__button-link">View Code</button>
-          </a>
-          <a target="_blank" href="https://youtu.be/qt_hCJjQVrk?t=130"
-            ><button class="project__button-link--col">See Demo</button>
-          </a>
-        </div>
-      </div>
-      <div class="project__card">
-        <img
-          src="./images/carbontrack.png"
-          alt="carbon track logo"
-          class="project__card-image"
-          height="60"
-          width="450"
-        />
-        <img
-          src="./images/carbontrack-3.png"
-          alt="carbon track mobile app screen examples"
-          class="project__card-image"
-          height="375"
-          width="550"
-        />
-      </div>
-    </section>
-    <section id="project-2">
-      <div class="project__card">
-        <img
-          src="./images/nc-news-3.png"
-          alt="code from backend project"
-          class="project__card-image"
-          height="375"
-          width="550"
-        />
-      </div>
-      <div class="project__card">
-        <div id="card-body" class="project__card-body">
-          <h3>NC News Service API - Frontend</h3>
-          <p>
-            Northcoders (NC) News is a project built for the purpose of
-            providing a frontend architecture to the NC News Service API that I
-            built in a previous project. The intention of this React application
-            is to mimic the building of a real world frontend news site.
-          </p>
-          <p>
-            The technologies and packages used for this project included React,
-            HTML, CSS and axios.
-          </p>
-          <p>The project is built and hosted through Netlify</p>
-          <a target="_blank" href="https://github.com/mattbushdev/fe-nc-news"
-            ><button class="project__button-link">View Code</button>
-          </a>
-          <a target="_blank" href="https://nc-news-service.netlify.app/"
-            ><button class="project__button-link--col">Live App</button>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="project-3">
-      <div class="project__card">
-        <div id="card-body" class="project__card-body">
-          <h3>NC News Service API - Backend</h3>
-          <p>
-            Northcoders (NC) News Service API is a project built for the purpose
-            of accessing application data programmatically. The intention is to
-            mimic the building of a real world backend news service (such as
-            reddit) which should provide this data to the front end
-            architecture.
-          </p>
-          <p>
-            The technologies and packages used for this project included
-            postgreSQL, express, pg, pg-format, jest and supertest.
-          </p>
-          <p>The project is hosted through Heroku and incorporates CI/CD</p>
-          <a target="_blank" href="https://github.com/mattbushdev/nc-news-api">
-            <button class="project__button-link">View Code</button>
-          </a>
-        </div>
-      </div>
-      <div class="project__card">
-        <img
-          src="./images/nc-backend.png"
-          alt="code from backend project"
-          class="project__card-image"
-          height="400"
-          width="600"
-        />
-      </div>
-    </section>
-    <script>
-      toTopButton = document.getElementById("toTop");
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          toTopButton.style.display = "block";
-        } else {
-          toTopButton.style.display = "none";
-        }
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        toTopButton.style.display = "block";
+      } else {
+        toTopButton.style.display = "none";
       }
+    }
 
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <footer class="footer__block">
-      <h3 class="footer__text">Matt Bush</h3>
-      <div id="icons" class="icons">
-        <a target="_blank" href="https://github.com/mattbushdev">
-          <img
-            src="images/github-mark-light-32px.png"
-            alt="link to my github"
-            style="margin-right: 25px"
-          />
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/matthew-bush-001/">
-          <img
-            src="images/LI-In-Bug.png"
-            alt="link to my LinkedIn profile"
-            style="height: 30px; max-width: 35px; margin-right: 25px"
-          />
-        </a>
-        <a href="mailto:mattbushdev@gmail.com">
-          <img
-            src="images/gmail.svg"
-            alt="link to send email"
-            style="height: 30px; max-width: 35px"
-          />
-        </a>
-      </div>
-    </footer>
-  </body>
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <footer class="footer__block">
+    <h3 class="footer__text">Matt Bush</h3>
+    <div id="icons" class="icons">
+      <a target="_blank" href="https://github.com/mattbushdev">
+        <img src="images/github-mark-light-32px.png" alt="link to my github" style="margin-right: 25px" />
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/matthew-bush-001/">
+        <img src="images/LI-In-Bug.png" alt="link to my LinkedIn profile"
+          style="height: 30px; max-width: 35px; margin-right: 25px" />
+      </a>
+      <a href="mailto:mattbushdev@gmail.com">
+        <img src="images/gmail.svg" alt="link to send email" style="height: 30px; max-width: 35px" />
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
